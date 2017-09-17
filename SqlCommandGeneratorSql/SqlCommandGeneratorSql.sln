@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlCommandGeneratorSql", "SqlCommandGeneratorSql\SqlCommandGeneratorSql.csproj", "{FD5F1E79-C2AB-4217-84D2-B20676F6E07F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD5F1E79-C2AB-4217-84D2-B20676F6E07F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD5F1E79-C2AB-4217-84D2-B20676F6E07F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD5F1E79-C2AB-4217-84D2-B20676F6E07F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD5F1E79-C2AB-4217-84D2-B20676F6E07F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {807E75EA-99F3-4703-8C78-793D6705B277}
+	EndGlobalSection
+EndGlobal
