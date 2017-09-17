@@ -4,7 +4,7 @@ A class library that generates SQL statements with SqlCommand to verify that the
 
           var sqlGenerator = new SqlGenerator();
 
-            #region 查询sql语句
+            #region select sql
             var selectCmd = new SqlCommand();
             selectCmd.CommandText = "select * from table1 where field1=@field1 and field2=@field2";
             selectCmd.Parameters.Add(new SqlParameter { ParameterName = "@field1", Value = "字段1", Size = 30 });
@@ -12,7 +12,7 @@ A class library that generates SQL statements with SqlCommand to verify that the
             Console.WriteLine(sqlGenerator.BuildSqlStatement(selectCmd));
             Console.WriteLine("-----------------------------------------------------------------------------");
             #endregion
-            #region 添加sql语句
+            #region insert sql
             var insertCmd = new SqlCommand();
             insertCmd.CommandText = "insert into table1(field1,field2) value(@field1,@field2)";
             insertCmd.Parameters.Add(new SqlParameter { ParameterName = "@field1", Value = "字段1", Size = 30 });
@@ -20,13 +20,13 @@ A class library that generates SQL statements with SqlCommand to verify that the
             Console.WriteLine(sqlGenerator.BuildSqlStatement(insertCmd));
             Console.WriteLine("-----------------------------------------------------------------------------");
             #endregion
-            #region 存储过程
+            #region stored procedure 
             var storeprocCmd = new SqlCommand();
             storeprocCmd.CommandText = "proc_query";
             storeprocCmd.CommandType = System.Data.CommandType.StoredProcedure;
             storeprocCmd.Parameters.Add(new SqlParameter { ParameterName = "@field1", Value = "字段1", Size = 30 });
             #endregion
-            #region 出参
+            #region output parmeter
             var outPar = new SqlParameter();
             outPar.ParameterName = "@field2";
             outPar.SqlDbType = System.Data.SqlDbType.VarChar;
