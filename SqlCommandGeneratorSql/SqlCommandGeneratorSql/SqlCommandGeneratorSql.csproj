@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageTags>SqlCommand,SQL</PackageTags>
+    <PackageProjectUrl>https://github.com/axzxs2001/SqlCommandGeneratorSql</PackageProjectUrl>
+    <Authors>桂素伟</Authors>
+    <Company />
+    <Description>A class library that generates SQL statements with SqlCommand to verify that the data is correct in SqlServer</Description>
+    <PackageIconUrl>https://en.gravatar.com/userimage/127492023/580db49f7543676b0ab1bdb96eae6199.png?size=200</PackageIconUrl>
+    <RepositoryUrl>https://github.com/axzxs2001/SqlCommandGeneratorSql</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
