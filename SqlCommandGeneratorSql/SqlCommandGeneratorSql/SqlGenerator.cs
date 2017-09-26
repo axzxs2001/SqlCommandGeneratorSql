@@ -29,11 +29,7 @@ namespace SqlCommandGeneratorSql
             for (int i = 0; i < parameters.Length; i++)
             {
                 parameters[i] = sqlCommand.Parameters[i];
-            }
-            if (sql == null)
-            {
-                throw new ArgumentNullException("sql");
-            }
+            }          
             var safeParameters = parameters;
             if (safeParameters != null)
             {
